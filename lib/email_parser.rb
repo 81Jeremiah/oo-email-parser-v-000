@@ -12,16 +12,3 @@ class EmailParser
   @emails.split(/\s|,/).reject(&:empty?).uniq  # better refactoring  @emails.split(/,\s|\s/).uniq
   end
 end
-+
-+class EmailParser
-+
-+attr_accessor :emails
-+
-+  def initialize(emails)
-+    @emails = emails
-+  end
-+
-+  def parse
-+    #binding.pry
-+
-+  end
